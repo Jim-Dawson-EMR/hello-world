@@ -12,5 +12,19 @@ pipeline {
                 }
             }
         }
+        stage("libary function with arg") {
+            steps {
+                script {
+                    helloArgs.("Jenkins!")
+                }
+            }            
+        }
+        stage("addl libary function with arg") {
+            steps {
+                script {
+                    helloArgs.goodbyeWorld("Jenkins!")
+                }
+            }            
+        }
     }
 }
