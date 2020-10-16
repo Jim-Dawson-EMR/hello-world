@@ -26,7 +26,7 @@ pipeline {
         stage("addl libary function with arg") {
             steps {
                 script {
-                    helloArgs.goodbyeWorld('Jenkins!'")
+                    helloArgs.goodbyeWorld('Jenkins!')
                 }
             }            
         }
