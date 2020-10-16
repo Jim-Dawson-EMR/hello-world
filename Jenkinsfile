@@ -9,21 +9,21 @@ pipeline {
                 echo "$GIT_BRANCH"
             }
         }
-/*        stage("libary function no arg") {
+        stage("libary function no arg") {
             steps {
                 script {
                     helloWorld()
                 }
             }            
-        }*/
-        stage("libary function with arg") {
+        }
+/*        stage("libary function with arg") {
             steps {
                 script {
                     helloArgs.('Jenkins!')
                 }
             }            
-        }
-/*        stage("addl libary function with arg") {
+        }*/
+        stage("addl libary function with arg") {
             steps {
                 script {
                     helloArgs.goodbyeWorld('Jenkins!')
