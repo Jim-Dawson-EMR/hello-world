@@ -1,10 +1,15 @@
+@Library('github.com/Jim-Dawson-EMR/libraryTest')
+
 pipeline {
     agent any
 
     stages {
-        stage('Verify Branch') {
+        stage('call lib') {
             steps {
-                echo "$GIT_BRANCH"
+                script{
+                    helloWorld()
+                }
+//                echo "$GIT_BRANCH"
             }
         }
     }
