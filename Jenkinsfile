@@ -16,13 +16,13 @@ pipeline {
                 }
             }            
         }
-/*        stage("libary function with arg") {
+        stage("libary function with arg") {
             steps {
                 script {
-                    helloArgs.('Jenkins!')
+                    helloArgs.call('Jenkins!')
                 }
             }            
-        }*/
+        }
         stage("addl libary function with arg") {
             steps {
                 script {
