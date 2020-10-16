@@ -23,12 +23,12 @@ pipeline {
                 }
             }            
         }
-        stage("addl libary function with arg") {
+/*        stage("addl libary function with arg") {
             steps {
                 script {
                     helloArgs.goodbyeWorld('Jenkins!')
                 }
             }            
-        }
+        }*/
     }
 }
