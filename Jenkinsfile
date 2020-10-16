@@ -4,25 +4,29 @@ pipeline {
     agent any
 
     stages {
-        stage('call lib') {
+        stage('show branch') {
             steps {
                 echo "$GIT_BRANCH"
-                script{
-                    helloWorld()
-                }
             }
         }
+/*        stage("libary function no arg") {
+            steps {
+                script {
+                    helloWorld()
+                }
+            }            
+        }*/
         stage("libary function with arg") {
             steps {
                 script {
-                    helloArgs.("Jenkins!")
+                    helloArgs.('Jenkins!')
                 }
             }            
         }
         stage("addl libary function with arg") {
             steps {
                 script {
-                    helloArgs.goodbyeWorld("Jenkins!")
+                    helloArgs.goodbyeWorld('Jenkins!'")
                 }
             }            
         }
