@@ -1,4 +1,4 @@
-@Library('github.com/Jim-Dawson-EMR/libraryTest')
+@Library('https://github.com/Jim-Dawson-EMR/libraryTest')
 
 pipeline {
     agent any
