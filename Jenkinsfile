@@ -19,7 +19,7 @@ pipeline {
         stage("libary function with arg") {
             steps {
                 script {
-                    helloArgs.call('Jenkins!')
+                    helloArgs('Jenkins!')
                 }
             }            
         }
